@@ -2,45 +2,49 @@
 #include <limits.h>
 
 int main() {
-    // Exibindo os limites dos tipos de variáveis
-    printf("Limites dos tipos de variáveis:\n");
+    // Titulo
+    printf("Limites dos Tipos de Variaveis em C\n");
+    printf("----------------------------\n");
 
-    // Limites para char
-    printf("\nTipo: char\n");
-    printf("Valor mínimo: %d\n", CHAR_MIN);
-    printf("Valor máximo: %d\n", CHAR_MAX);
+    // Exibir limites para char
+    printf("\n[Tipo: char]\n");
+    printf("Menor valor: %d\n", CHAR_MIN);
+    printf("Maior valor: %d\n", CHAR_MAX);
 
-    // Limites para short int
-    printf("\nTipo: short int\n");
-    printf("Valor mínimo: %d\n", SHRT_MIN);
-    printf("Valor máximo: %d\n", SHRT_MAX);
+    // Exibir limites para short int
+    printf("\n[Tipo: short int]\n");
+    printf("Menor valor: %d\n", SHRT_MIN);
+    printf("Maior valor: %d\n", SHRT_MAX);
 
-    // Limites para int
-    printf("\nTipo: int\n");
-    printf("Valor mínimo: %d\n", INT_MIN);
-    printf("Valor máximo: %d\n", INT_MAX);
+    // Exibir limites para int
+    printf("\n[Tipo: int]\n");
+    printf("Menor valor: %d\n", INT_MIN);
+    printf("Maior valor: %d\n", INT_MAX);
 
-    // Limites para unsigned int
-    printf("\nTipo: unsigned int\n");
-    printf("Valor máximo: %u\n", UINT_MAX); // Apenas valor máximo, já que não existem negativos
+    // Exibir limites para unsigned int
+    printf("\n[Tipo: unsigned int]\n");
+    printf("Maior valor: %u\n", UINT_MAX);
 
-    // Limites para long int
-    printf("\nTipo: long int\n");
-    printf("Valor mínimo: %ld\n", LONG_MIN);
-    printf("Valor máximo: %ld\n", LONG_MAX);
+    // Exibir limites para long int
+    printf("\n[Tipo: long int]\n");
+    printf("Menor valor: %ld\n", LONG_MIN);
+    printf("Maior valor: %ld\n", LONG_MAX);
 
-    // Limites para unsigned long int
-    printf("\nTipo: unsigned long int\n");
-    printf("Valor máximo: %lu\n", ULONG_MAX);
+    // Exibir limites para unsigned long int
+    printf("\n[Tipo: unsigned long int]\n");
+    printf("Maior valor: %lu\n", ULONG_MAX);
 
-    // Limites para long long int
-    printf("\nTipo: long long int\n");
-    printf("Valor mínimo: %lld\n", LLONG_MIN);
-    printf("Valor máximo: %lld\n", LLONG_MAX);
+    // Exibir limites para long long int
+    printf("\n[Tipo: long long int]\n");
+    printf("Menor valor: %lld\n", LLONG_MIN);
+    printf("Maior valor: %lld\n", LLONG_MAX);
 
-    // Limites para unsigned long long int
-    printf("\nTipo: unsigned long long int\n");
-    printf("Valor máximo: %llu\n", ULLONG_MAX);
+    // Exibir limites para unsigned long long int
+    printf("\n[Tipo: unsigned long long int]\n");
+    printf("Maior valor: %llu\n", ULLONG_MAX);
+
+    // Fim
+    printf("\nFim da Tabela de Limites.\n");
 
     return 0;
 }
