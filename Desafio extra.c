@@ -4,64 +4,64 @@ int main() {
     float N1 = 0, N2 = 0, PPD = 0, EU = 0, N3 = 0, NotaFinal = 0;
     int fezEU = 0, fezN3 = 0;
 
-    // Leitura da N1 com validaÁ„o
+    // Leitura da N1 com valida√ß√£o
     do {
         printf("Informe a nota da N1 (0 a 4.5): ");
         scanf("%f", &N1);
         
         if (N1 < 0 || N1 > 4.5) {
-            printf("ERRO: Nota inv·lida. Tente novamente.\n");
+            printf("ERRO: Nota inv√°lida. Tente novamente.\n");
         }
     } while (N1 < 0 || N1 > 4.5);
     
-    // Leitura da N2 com validaÁ„o
+    // Leitura da N2 com valida√ß√£o
     do {
         printf("Informe a nota da N2 (0 a 4.5): ");
         scanf("%f", &N2);
         
         if (N2 < 0 || N2 > 4.5) {
-            printf("ERRO: Nota inv·lida. Tente novamente.\n");
+            printf("ERRO: Nota inv√°lida. Tente novamente.\n");
         }
     } while (N2 < 0 || N2 > 4.5);
     
-    // Leitura da PPD com validaÁ„o
+    // Leitura da PPD com valida√ß√£o
     do {
         printf("Informe a nota da PPD (0 a 1.0): ");
         scanf("%f", &PPD);
         
         if (PPD < 0 || PPD > 1.0) {
-            printf("ERRO: Nota inv·lida. Tente novamente.\n");
+            printf("ERRO: Nota inv√°lida. Tente novamente.\n");
         }
     } while (PPD < 0 || PPD > 1.0);
     
     // Pergunta se o aluno fez o Exame Unificado
-    printf("O aluno realizou o Exame Unificado (EU)? (0 = N„o, 1 = Sim): ");
+    printf("O aluno realizou o Exame Unificado (EU)? (0 = N√£o, 1 = Sim): ");
     scanf("%d", &fezEU);
     
-    // Se fez o Exame Unificado, lÍ a nota com validaÁ„o
+    // Se fez o Exame Unificado, l√™ a nota com valida√ß√£o
     if (fezEU == 1) {
         do {
             printf("Informe a nota do Exame Unificado (0 a 1.0): ");
             scanf("%f", &EU);
             
             if (EU < 0 || EU > 1.0) {
-                printf("ERRO: Nota inv·lida. Tente novamente.\n");
+                printf("ERRO: Nota inv√°lida. Tente novamente.\n");
             }
         } while (EU < 0 || EU > 1.0);
     }
     
     // Pergunta se o aluno fez a N3
-    printf("O aluno realizou a N3? (0 = N„o, 1 = Sim): ");
+    printf("O aluno realizou a N3? (0 = N√£o, 1 = Sim): ");
     scanf("%d", &fezN3);
     
-    // Se fez a N3, lÍ a nota com validaÁ„o
+    // Se fez a N3, l√™ a nota com valida√ß√£o
     if (fezN3 == 1) {
         do {
             printf("Informe a nota da N3 (0 a 4.5): ");
             scanf("%f", &N3);
             
             if (N3 < 0 || N3 > 4.5) {
-                printf("ERRO: Nota inv·lida. Tente novamente.\n");
+                printf("ERRO: Nota inv√°lida. Tente novamente.\n");
             }
         } while (N3 < 0 || N3 > 4.5);
     }
@@ -80,7 +80,7 @@ int main() {
     
     // Verifica o resultado do aluno
     if (NotaFinal >= 7 && NotaFinal <= 10) {
-        printf("Nota final: %.2f\n", NotaFinal > 10 ? 10.0 : NotaFinal); // Garante que n„o passe de 10
+        printf("Nota final: %.2f\n", NotaFinal > 10 ? 10.0 : NotaFinal); // Garante que n√£o passe de 10
         printf("Resultado: APROVADO\n");
     } else {
         printf("Nota final: %.2f\n", NotaFinal);
